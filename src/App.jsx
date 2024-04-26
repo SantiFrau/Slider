@@ -8,7 +8,7 @@ import {useState } from "react";
 
 function App() {
   const [source, setSrc] = useState(img[0]); //estado para  guradar fuente actual
-  const [prevSource, setPrevSrc] = useState("");  // estado para la previa fuente
+  const [prevSource, setPrevSrc] = useState(img[img.length - 1]);  // estado para la previa fuente
   const [animacion, setAnimacion] = useState(""); //estado para signarle la animacion
 
   const changue = (condicion) => {
